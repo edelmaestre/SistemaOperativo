@@ -1,0 +1,13 @@
+#!/bin/bash
+clear
+while true
+do
+  read tecla
+case $tecla in
+[a-z,A-Z]) echo " dijito una letra ";;
+[0-9]) echo "dijito un numero";;
+*) echo "dijito un caracter especial";;
+esac
+read nulo
+done
+

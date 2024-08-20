@@ -1,0 +1,11 @@
+#!/bin/bash
+
+clear
+echo "dijite comando \c"
+while read comando
+do
+  man $comando >> manual
+echo "dijite comando \c"
+done
+more manual
+

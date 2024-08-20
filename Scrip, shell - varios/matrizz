@@ -1,0 +1,16 @@
+#!/bin/bash
+#colores
+clear
+tput setaf 1
+tput cup   15   30
+tput rev
+echo "menu principal" 
+tput setaf 2
+tput cup 15 30
+echo " opcion 1"
+tput setaf 5
+tput cup 15 30
+echo " opcion 2"
+tput setaf 123
+tput cup 15 30
+echo " opcion 3"

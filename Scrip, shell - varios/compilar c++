@@ -1,0 +1,11 @@
+1.para compilar c++ 
+  g++ ejemplo.cpp -o nomObjeto
+  
+  para compilar en c
+  gcc ejemplo.c -o nomObjeto
+2.listamos para ver si creo el objeto
+comando ls --> debe salir el objeto en color
+3.ejecutamos y listo
+ ./nomObjeto
+
+

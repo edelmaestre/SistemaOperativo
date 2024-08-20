@@ -1,0 +1,7 @@
+# Crea manual de comando Linux
+clear
+while read linea
+do
+  man $linea >> manual
+done < comandos
+more manual

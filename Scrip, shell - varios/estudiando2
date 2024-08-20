@@ -1,0 +1,14 @@
+#Obras literarias
+#!/bin/bash
+clear
+arrayObras=("don quijote de la mancha" "la divina comedia")
+arrayAutores=("miguel cervantes" "hugo fonseca")
+echo "ingrese nombre de la obra:"
+read obra
+for i in ${!arrayObras[*]}
+do
+  if [ "$obra" == "${arrayObras[$i]}" ]; then
+    echo "La obra es del autor ${arrayAutores[i]}"
+  fi 
+done
+read n

@@ -1,0 +1,4 @@
+#!/bin/bash
+#mi primer shell
+clear
+echo "hola mundo"

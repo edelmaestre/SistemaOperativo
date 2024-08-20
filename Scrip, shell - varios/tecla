@@ -1,0 +1,15 @@
+#!/bin/bash
+#Script que nos dice si la tecla pulsada fue una letra, un número o un caracter especial 
+#
+clear
+while true
+do
+    echo "Pulse una tecla cualquiera "
+    read  tecla
+    case $tecla in
+          [a-z,A-Z]) echo " Ha introducido una  letra";;
+          [0-9]) echo " Ha introducido un número";;
+          *) echo "Ha  introducido un caracter especial";;
+    esac
+    read nulo
+done

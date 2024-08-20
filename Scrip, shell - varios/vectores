@@ -1,0 +1,39 @@
+#!/bin/bash
+
+NAME=()
+
+aux=0
+
+while(test $aux -lt 4)
+do
+
+read estudiante
+
+NAME[$aux]=$estudiante
+
+aux=`expr $aux "+" 1`
+
+done
+
+#NAME[0]="HOLA MUNDO"
+#NAME[1]="HOLA MUNDO 2"
+#NAME[2]="HOLA MUNDO 33"
+#NAME[3]="HOLA MUNDO 444"
+
+aux=0
+echo ""
+echo "Registros:"
+while(test $aux -lt 4)
+do
+#echo "${NAME[$aux]}"
+echo "${NAME[$aux]}">>texto.txt
+aux=`expr $aux "+" 1`
+done
+
+echo "Imprime todos: ${NAME[*]}"
+
+echo "Cantidad de elementos: ${#NAME[*]}"
+
+echo "longitud del indice: ${#NAME[0]}"
+
+#echo "${NAME[*]}">texto.txt

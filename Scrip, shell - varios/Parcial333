@@ -1,0 +1,8 @@
+#!/bin/bash
+#IN="bla@some.com;john@home.com"
+
+while IFS=';' read -ra ADDR; do
+	echo ${ADDR[*]}
+#	echo ${ADDR[1]}
+done
+echo <<< -l intinerarios

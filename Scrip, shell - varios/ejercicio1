@@ -1,0 +1,22 @@
+#!/bin/bash
+# Calcula factorial de un numero
+clear
+fact=1
+tempo=0
+while true
+do
+  echo " "
+  echo "Digite nro factorial a calcular"
+  read nro
+  tempo=$nro
+  while (test $tempo -gt 1)
+  do
+    fact=`expr $fact "*" $tempo`
+    tempo=`expr $tempo "-" 1`
+  done
+  echo "El nro factorial es $fact"
+  tempo=0
+  fact=1
+  echo "Quiere continuar calculando nros factorial (si ENTER/ no ctr-z)"
+  read nulo
+done  
